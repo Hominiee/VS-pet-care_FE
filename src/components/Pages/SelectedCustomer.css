@@ -1,0 +1,19 @@
+/* .ant-btn-primary {
+    color: #ffffff;
+    background: #94C973;
+    border-color: #94C973;
+    box-shadow: none;
+    margin-top: -200px;
+} */
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-btn-default {
+    background: #ffffff;
+    border-color: #94c973;
+    color: #94c973;
+    box-shadow: 0 2px 0 rgba(121, 100, 100, 0.02);
+}
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-btn-default {
+    background: #ffffff;
+    border-color: #94c973;
+    color: #94c973;
+    box-shadow: 0 2px 0 rgba(223, 90, 90, 0.02);
+}

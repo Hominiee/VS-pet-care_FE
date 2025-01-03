@@ -35,10 +35,12 @@ export default function SearchBar() {
                         <Col span={8}>
                         </Col>
                         <Col span={8}>
+                        <Tooltip title="Search">
                             <Search placeholder="input search text" allowClear onSearch={onSearch} style={{ width: 300 , marginTop: 20 }} />
+                        </Tooltip>
                         </Col>
                         <Col className='AddButtonCol' span={8}>
-                            <Tooltip title="search">
+                            <Tooltip title="Add">
                                 <Button shape="circle" icon={<PlusOutlined />} />
                             </Tooltip>
                         </Col>

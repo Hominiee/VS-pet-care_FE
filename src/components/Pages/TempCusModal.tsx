@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import {
-  Checkbox,
   DatePicker,
   Form,
   Input,
@@ -14,7 +12,6 @@ import {
   Button,
   message,
 } from 'antd';
-import './SelectedCustomer.css'
 
 const { TextArea } = Input;
 
@@ -25,8 +22,7 @@ const normFile = (e: any) => {
   return e?.fileList;
 };
 
-const FormDisabledDemo: React.FC = () => {
-  const [componentDisabled, setComponentDisabled] = useState<boolean>(true);
+const TempCusModal: React.FC = () => {
 
 const h4_Style: React.CSSProperties = {
   marginLeft: '20px',
@@ -35,13 +31,8 @@ const h4_Style: React.CSSProperties = {
   fontWeight: 450,
 };
 
-const Checkbox_Style: React.CSSProperties = {
-  color: 'rgba(0, 0, 0, 0.400)',
-  fontWeight: 450,
-};
-
 const onFinish = () => {
-  message.success('Submit success!');
+  message.success('Added successfully!');
 };
 
 const onFinishFailed = () => {
@@ -50,21 +41,12 @@ const onFinishFailed = () => {
 
   return (
     <>
-      <Checkbox style={Checkbox_Style}
-        checked={componentDisabled}
-        onChange={(e) => setComponentDisabled(e.target.checked)}
-        
-      >
-        Edit data
-      </Checkbox>
-
-      <Divider />
-
+     
       <Form
-        labelCol={{ span: 8 }}
-        wrapperCol={{ span: 9 }}
+        
+        labelCol={{ span: 3 }}
+        wrapperCol={{ span: 7 }}
         layout="horizontal"
-        disabled={componentDisabled}
         style={{ maxWidth: '100%' }}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
@@ -75,9 +57,6 @@ const onFinishFailed = () => {
 
       <h4 style={h4_Style}>Owner Details</h4>
 
-        <Form.Item label="Customer ID :">
-          Cus01
-        </Form.Item>
         <Form.Item label="Name :">
           <Input />
         </Form.Item>
@@ -102,9 +81,6 @@ const onFinishFailed = () => {
               <div style={{ marginTop: 8 }}>Upload</div>
             </button>
           </Upload>
-        </Form.Item>
-        <Form.Item label="Pet ID :">
-          Pet01
         </Form.Item>
         <Form.Item label="Name :">
           <Input />
@@ -132,8 +108,8 @@ const onFinishFailed = () => {
         <Form.Item label="Age :">
           <InputNumber />
         </Form.Item>
-        <Form.Item label="Last vaccine given :">
-          <TextArea autoSize />
+        <Form.Item  label="Last vaccine given :" >
+          <TextArea placeholder="If any" autoSize />
         </Form.Item>
         <Form.Item label="Special Note :">
           <TextArea placeholder="If any" autoSize />
@@ -141,7 +117,7 @@ const onFinishFailed = () => {
         <Form.Item label=" ">
           <Space>
             <Button type="primary" htmlType="submit">
-              Submit
+              Add
             </Button>
             <Button htmlType="button">
               Cancel
@@ -153,4 +129,4 @@ const onFinishFailed = () => {
   );
 };
 
-export default () => <FormDisabledDemo />;
+export default TempCusModal;
