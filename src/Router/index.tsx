@@ -14,6 +14,8 @@ import Calendar from "../components/Pages/Calendar";
 import Employees from "../components/Pages/Employees";
 import SelectedEmployee from "../components/Pages/SelectedEmployee"
 import Login from "../components/Pages/Login";
+import TempCusModal from "../components/Pages/TempCusModal";
+import TempInventoryModal from "../components/Pages/TempInventoryModal";
 
   
   const routes = createRoutesFromElements(
@@ -49,6 +51,18 @@ import Login from "../components/Pages/Login";
                 <Employees />
             }
         />
+        <Route
+            path="selectedcustomer"
+            element={
+                <SelectedCustomer />
+            }
+        />
+        <Route
+            path="selectedemployee"
+            element={
+                <SelectedEmployee />
+            }
+        />
       </Route>
 
       <Route element={<BasicLayout searchbar={false} />}>
@@ -70,25 +84,27 @@ import Login from "../components/Pages/Login";
                 <Incomes />
             }
         />
-        <Route
-            path="selectedcustomer"
-            element={
-                <SelectedCustomer />
-            }
-        />
-        <Route
-            path="calendar"
-            element={
-                <Calendar />
-            }
-        />
-        <Route
-            path="selectedemployee"
-            element={
-                <SelectedEmployee />
-            }
-        />
     </Route>
+    <Route
+        path="calendar"
+        element={
+            <Calendar />
+        }
+    />
+    {/* Temporarily added for testing "Add new customer modal" => (93-98) */}
+    <Route
+        path="tempcusmodal"
+        element={
+            <TempCusModal />
+        }
+    />
+    <Route
+        path="tempinvmodal"
+        element={
+            <TempInventoryModal />
+        }
+    />
+
   </Route>,
 );
   
