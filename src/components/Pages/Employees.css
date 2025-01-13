@@ -1,0 +1,126 @@
+/* General Styles */
+.employees-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Card Layout */
+.employee-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.employee-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Profile Picture Section */
+.employee-photo {
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.upload-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ccc;
+  color: #888;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.upload-placeholder:hover {
+  background-color: #e6e6e6;
+}
+
+/* Employee Details Section */
+.employee-details {
+  text-align: left;
+}
+
+.employee-details p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.employee-details strong {
+  display: inline-block;
+  width: 80px;
+}
+
+/* Input Field Styles */
+.employee-details input {
+  width: calc(100% - 90px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.employee-details input:focus {
+  outline: none;
+  border-color: #40a9ff;
+  box-shadow: 0 0 5px rgba(24, 144, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employee-card {
+    padding: 15px;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .upload-placeholder {
+    width: 80px;
+    height: 80px;
+  }
+
+  .employee-details strong {
+    width: 70px;
+  }
+
+  .employee-details input {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 576px) {
+  .employee-card {
+    padding: 10px;
+  }
+
+  .employee-details p {
+    font-size: 13px;
+  }
+
+  .employee-details strong {
+    width: 60px;
+  }
+
+  .employee-details input {
+    width: calc(100% - 70px);
+  }
+}

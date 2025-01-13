@@ -16,6 +16,7 @@ import SelectedEmployee from "../components/Pages/SelectedEmployee"
 import Login from "../components/Pages/Login";
 import TempCusModal from "../components/Pages/TempCusModal";
 import TempInventoryModal from "../components/Pages/TempInventoryModal";
+import Modal_for_a_New_Employee from "../components/Pages/Modal_for_a_New_Employee";
 
   
   const routes = createRoutesFromElements(
@@ -84,7 +85,14 @@ import TempInventoryModal from "../components/Pages/TempInventoryModal";
                 <Incomes />
             }
         />
+        <Route
+            path="Modal_for_a_New_Employee"
+            element={
+                <Modal_for_a_New_Employee />
+            }
+        />
     </Route>
+
     <Route
         path="calendar"
         element={
@@ -106,6 +114,7 @@ import TempInventoryModal from "../components/Pages/TempInventoryModal";
     />
 
   </Route>,
+  
 );
   
 export const Router = createBrowserRouter(routes);

@@ -1,0 +1,51 @@
+.new-employee-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ant-btn-primary {
+    color: #fff;
+    background-color: #94c973;
+    border-color: #94c973;
+  }
+  
+  .ant-btn-default {
+    background: #ffffff;
+    border-color: #94c973;
+    color: #94c973;
+  }
+  
+  .ant-upload {
+    margin-bottom: 20px;
+  }
+  
+  .ant-upload-select {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #94c973;
+    border-radius: 10px;
+  }
+  
+  .ant-upload.ant-upload-select-picture-card:hover {
+    border-color: #7ebd63;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .new-employee-form {
+      padding: 15px;
+    }
+  
+    .ant-form-item {
+      margin-bottom: 12px;
+    }
+  
+    .ant-btn {
+      width: 100%;
+    }
+  }
+  

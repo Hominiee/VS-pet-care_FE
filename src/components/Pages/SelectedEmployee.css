@@ -1,0 +1,71 @@
+.selected-employee-page {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-container {
+  padding: 20px;
+}
+
+.employee-photo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.upload-photo {
+  width: 150px;
+  height: 150px;
+  border: 1px dashed #94c973;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.upload-placeholder {
+  text-align: center;
+  color: #94c973;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.employee-info {
+  padding: 0 20px;
+}
+
+.ant-divider {
+  margin: 20px 0;
+}
+
+.ant-btn-primary {
+  background-color: #94c973;
+  border-color: #94c973;
+}
+
+.ant-btn-danger {
+  background-color: #f5222d;
+  border-color: #f5222d;
+}
+
+@media screen and (max-width: 768px) {
+  .employee-photo {
+    margin-bottom: 20px;
+  }
+
+  .employee-info {
+    padding: 0;
+  }
+
+  .ant-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
